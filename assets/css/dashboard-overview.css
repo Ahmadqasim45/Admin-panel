@@ -1,0 +1,42 @@
+
+.investor-dashboard-overview{
+
+
+.summary-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding-inline: 15px;
+    padding-block: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+.summary-card:hover {
+    transform: scale(1.05);
+}
+.recent-activity {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.progress {
+    height: 20px;
+    border-radius: 10px;
+}
+.progress-bar {
+    background-color: #28a745;
+}
+.collapsible-header {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.collapsible-content {
+    display: none;
+    margin-top: 10px;
+}
+}

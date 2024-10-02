@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Details - Real Estate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .investment-header {
+            background-color: #007bff;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .investment-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .investment-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .investment-stats {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .stat-box {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-box h4 {
+            color: #007bff;
+        }
+        .stat-box p {
+            margin: 0;
+        }
+        .investment-description {
+            margin-top: 20px;
+        }
+        .map-section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="investorPlaceholder"></div>
+<div class="investment-details pt-5">
+
+
+<div class="investment-header pt-5">
+    <h1>Real Estate Investment Details</h1>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <!-- Investment Details Section -->
+        <div class="col-md-8">
+            <div class="investment-info">
+                <img src="assets/images/manage-listing/NPID-18777-hero-Posters-NA-003.jpg" alt="Real Estate" class="investment-image mb-4">
+                <h2>Luxury Residential Property</h2>
+                <p><strong>Location:</strong> Downtown, City</p>
+                <p><strong>Investment Type:</strong> Real Estate</p>
+                <p><strong>ROI:</strong> 15%</p>
+                <p><strong>Investment Amount:</strong> $500,000</p>
+                <div class="investment-description">
+                    <h4>Description</h4>
+                    <p>This is a premium residential property located in the heart of the city, offering luxurious amenities and proximity to key locations. The project is aimed at high-end buyers and investors looking for solid returns.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Investment Stats Section -->
+        <div class="col-md-4">
+            <div class="investment-stats">
+                <h4 class="text-center">Investment Stats</h4>
+                <div class="row text-center">
+                    <div class="col-6 stat-box">
+                        <h4>15%</h4>
+                        <p>Annual ROI</p>
+                    </div>
+                    <div class="col-6 stat-box">
+                        <h4>$500k</h4>
+                        <p>Investment</p>
+                    </div>
+                </div>
+                <div class="row text-center mt-3">
+                    <div class="col-6 stat-box">
+                        <h4>5 Years</h4>
+                        <p>Duration</p>
+                    </div>
+                    <div class="col-6 stat-box">
+                        <h4>80%</h4>
+                        <p>Occupancy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map-section">
+        <h4>Location Map</h4>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.1800475764594!2d70.29673217456391!3d28.413823593980638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39375b715bbfc9b9%3A0xae676f6a222ca2df!2sCodesinc!5e0!3m2!1sen!2s!4v1727865750889!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    // Load the header from the external file
+    fetch('user-header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('investorPlaceholder').innerHTML = data;
+        });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
